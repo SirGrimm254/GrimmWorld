@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+header{
+  display: flex;
+  padding: 10px;
+  background-color: antiquewhite;
+  flex-direction: column;
+  align-items: center;
+}
+header h1{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5px;
+  animation: fadeIn 2s ease-in-out;
+  color: rosybrown;
+}
+nav{
+  width: 100%;
+  text-align: center;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  animation: slideIn 1s ease-in-out;
+}
+nav ul li:hover{
+  text-decoration: underline;
+}
+@keyframes slideIn{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+h2{
+  color: darkcyan;
+}
+.zone{
+  text-align: center;
+  background-color: azure;
+  padding: 10px;
+}
+input[type="button"]{
+  background-color: antiquewhite;
+  color: rosybrown;
+  font-size: 1.2em;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.home-buttons{
+  text-align: right;
+}
+.banner{
+  display: inline-flex;
+  animation: scrollBanner 20s linear infinite;
+}
+.banner-container{
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+@keyframes scrollBanner{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.banner img{
+  width: 1000px;
+  height: 100px;
+  border-radius: 5px;
+}
+.username-display{
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-right: 10px;
+}
