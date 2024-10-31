@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+header{
+  margin: 0;
+  display: flex;
+  padding: 10px;
+  background-color: antiquewhite;
+  flex-direction: column;
+  align-items: center;
+}
+header h1{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5px;
+  animation: fadeIn 2s ease-in-out;
+  color: rosybrown;
+}
+nav{
+  width: 100%;
+  text-align: center;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  animation: slideIn 1s ease-in-out;
+}
+nav ul li:hover{
+  text-decoration: underline;
+}
+@keyframes slideIn{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+.login{
+  border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  background: url('Back.jpeg');
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+}
+form{
+  display: block;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(40%);
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+h1{
+  font-weight: bolder;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: rosybrown;
+}
+label{
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+input{
+  background: rgba(255, 255, 255, 0.3);
+  height: 30px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  border: none;
+  color: white;
+}
+input[type="submit"], input[type="reset"], input[type="button"]{
+  color: rosybrown;
+  background-color: antiquewhite;
+  font-size: 1.2em;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  margin-top: 20px;
+}
+.form-buttons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+

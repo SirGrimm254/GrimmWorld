@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header>
+    <h1>Grimm World Manga</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#manga">Manga</a></li>
+        <li><a href="index.html#categories">Categories</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="register">
+    <form id="registerForm">
+      <h1>Registration Form</h1>
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email: </label>
+      <input type="text" id="email" name="email" required>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" required>
+      <label for="confirm">Confirm Password: </label>
+      <input type="password" id="confirm" name="confirm" required>
+      <div class="form-buttons">
+        <input type="submit" value="Register">
+        <input type="reset" value="Cancel">
+      </div>
+    </div>
+  </form>
+  <script src="register.js"></script>
+</body>
+</html>
